@@ -1,0 +1,162 @@
+@import url(./views/fonts/RWDewi/stylesheet.css);
+html{
+    font-family: "RF Dewi";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #02020D;
+    
+}
+header {
+    background: #1822B7 ;
+    color: #ffffff;
+}
+.subtitle {
+    font: "RF Dewi";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+}
+h1 {
+    margin: 14px 20px 44px 20px;
+    font-family: "RF Dewi Expanded";
+    font-size: 39px;
+    line-height: 43px;
+    font-weight: 900;
+    text-transform: uppercase;
+    word-wrap: break-word;
+}
+.subtitle::before {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 320px;
+    background-image: url('./views/background_image/header_back_dotted.svg');
+    background-size: 320px 320px;
+    margin-top: -95px;
+}
+/* .list::before {
+    position: absolute;
+    content: "";
+    width: 267px;
+    height: 267px;
+    background-image: url('./views/background_image/header_dotsgroup.svg');
+    background-size: 267px 267px;
+    margin: 0px 0px 0px 0px;
+} */
+.three_dots {
+    position: relative;
+    margin-bottom: 60px;
+}
+.three_dots::after {
+    position: absolute ;
+    content: "";
+    width: 67px;
+    height: 17px;
+    background-image: url('./views/background_image/3_dots.svg');
+    background-size: 67px 17px;
+    margin: 0px 0px 0px 20px;
+}
+h2 {
+    margin: 20px 20px;
+    font-family: "RF Dewi Extended";
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 43px;
+}
+h3 {
+    margin: 20px 20px 5px 20px;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 37px;
+}
+h4 {
+    margin: 0px 20px;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 600;
+} 
+body {
+    min-width: 320px;
+    margin: 0 auto;
+}
+.list {
+    position: relative;
+    margin-left: 20px;
+    color: rgba(255, 255, 255, 0.7);
+}
+.list_box_title {
+    color: #fff;
+}
+.list_box {
+    line-height: normal;
+    word-wrap: break-word;
+    margin-bottom: 24px;
+    max-width: 180px;
+}
+p{
+    margin: 20px 40px 20px 20px;
+}
+.logos {
+    padding: 24px 30px 125px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.mission_border {
+    margin: 40px 20px;
+    border: solid 1px #E3A655;
+    border-radius: 5%;
+}
+.direct_company {
+    background: #F3F4FB;
+    padding: 20px 20px 45px 20px;
+}
+.icons {
+    margin-left: 20px;
+}
+.btn_more {
+    background-color: transparent;
+    border: 2px solid #1822B7;
+    border-radius: 14px;
+    min-width: 280px;
+    min-height: 45px;
+    color: #1822B7;
+}
+.btn_more_text {
+    font-family: "RF Dewi";
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center; 
+}
+footer {
+    display: flex;
+    min-height: 110px;
+    text-align: center;
+    background: rgba(24, 34, 183, 0.05);
+    color: rgba(0, 0, 0, 0.6);
+    justify-content: space-evenly;
+    flex-flow: column wrap;
+    align-content: space-around;
+}
+.founders_names_1 {
+font-size: 15px;
+font-weight: 500;
+line-height: 24px;
+}
+.founders_names_2 {
+font-size: 23px;
+font-weight: 600;
+line-height: 28px;
+}
+.founders_names_3 {
+font-size: 14px;
+font-weight: 500;
+line-height: 22px;
+}
+.founders {
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.footer_a {
+    color: rgba(0, 0, 0, 0.6);
+}
