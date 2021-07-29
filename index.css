@@ -8,8 +8,9 @@ html{
     
 }
 header {
-    background: #1822B7 ;
-    color: #ffffff;
+    color: #fff;
+    background: url(./views/background_image/header_dotsgroup.svg) right 0 top 90% / 104px no-repeat, url(./views/background_image/header_back_dotted.svg) center top 25% / 320px no-repeat #1822B7;
+    min-height: 640px;
 }
 .subtitle {
     font: "RF Dewi";
@@ -18,7 +19,7 @@ header {
     line-height: 18px;
 }
 h1 {
-    margin: 14px 20px 44px 20px;
+    margin: 14px 20px 44px 10px;
     font-family: "RF Dewi Expanded";
     font-size: 39px;
     line-height: 43px;
@@ -26,27 +27,11 @@ h1 {
     text-transform: uppercase;
     word-wrap: break-word;
 }
-.subtitle::before {
-    position: absolute;
-    content: "";
-    width: 320px;
-    height: 320px;
-    background-image: url('./views/background_image/header_back_dotted.svg');
-    background-size: 320px 320px;
-    margin-top: -95px;
-}
-/* .list::before {
-    position: absolute;
-    content: "";
-    width: 267px;
-    height: 267px;
-    background-image: url('./views/background_image/header_dotsgroup.svg');
-    background-size: 267px 267px;
-    margin: 0px 0px 0px 0px;
-} */
 .three_dots {
+    justify-content: flex-start;
     position: relative;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
+
 }
 .three_dots::after {
     position: absolute ;
@@ -55,14 +40,17 @@ h1 {
     height: 17px;
     background-image: url('./views/background_image/3_dots.svg');
     background-size: 67px 17px;
-    margin: 0px 0px 0px 20px;
+    margin-left: 20px;
 }
 h2 {
-    margin: 20px 20px;
+    margin: 20px 0px;
+    padding-right: 70px;
     font-family: "RF Dewi Extended";
     font-size: 36px;
     font-weight: 900;
     line-height: 43px;
+    padding-left: 20px;
+
 }
 h3 {
     margin: 20px 20px 5px 20px;
@@ -77,7 +65,7 @@ h4 {
     font-weight: 600;
 } 
 body {
-    min-width: 320px;
+    min-width: 360px;
     margin: 0 auto;
 }
 .list {
@@ -102,10 +90,28 @@ p{
     display: flex;
     justify-content: space-between;
 }
+.resume {
+    margin-top: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.founders {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.direct_block_main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+
 .mission_border {
-    margin: 40px 20px;
+    margin: 40px 30px;
     border: solid 1px #E3A655;
-    border-radius: 5%;
+    border-radius: 15px;
 }
 .direct_company {
     background: #F3F4FB;
@@ -121,6 +127,7 @@ p{
     min-width: 280px;
     min-height: 45px;
     color: #1822B7;
+    margin-left: 20px;
 }
 .btn_more_text {
     font-family: "RF Dewi";
@@ -159,4 +166,203 @@ line-height: 22px;
 }
 .footer_a {
     color: rgba(0, 0, 0, 0.6);
+}
+.mobile_hidden {
+    display: none;
+}
+.tel_link {
+    text-decoration: none;
+    color: #fff;
+}
+@media (min-width: 768px) {
+    h1 {
+    margin-left:  76px;
+    font-size: 63px;
+    font-weight: 900;
+    line-height: 69px;
+    word-break: break-word;
+    }
+    .header_top {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 200px;
+    }
+    .logos {
+        padding: 24px 60px 0px 60px;
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .tablet_element {
+        display: flex;
+        
+    }
+
+    .subtitle {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 26px;
+    padding-left: 60px;
+    }
+    .header_bottom {
+        display: flex;
+        justify-content: flex-start;
+        flex-flow: column wrap;
+    }
+
+    header {
+        color: #fff;
+        background: url(./views/background_image/header_back_dotted_desktop_1.png) right 10% top 20% / 200px no-repeat, url(./views/background_image/header_back_dotted.svg) top 130% left 10% / 530px no-repeat #1822B7;
+ 
+    }
+    .logos_icons {
+        margin-right: 10px;
+    }
+    .list {
+        margin: 0 60px ;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-flow: row wrap;
+    }
+    .list_box {
+        font-size: 1.1em;
+        max-width: 30%;
+    }
+    .list_box_dot {
+        padding-right: 50px;
+    }
+    .list_box_dot::after {
+        display: flex;
+        content: '';
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 50%;
+        width: 8px;
+        height: 8px;
+        top: 50%;
+        position: relative;
+        margin: -20px 0px 0px 110%;
+    }
+    .main_block_1 {
+        max-width: 45%;
+    }
+    .main_block_2 {
+        max-width: 55%;
+    }
+
+    .btn_more {
+        display: none;
+    }
+    .direct_block {
+        max-width: 30%;  
+    }
+    footer {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        min-height: 60px;
+    }
+    .footer_block {
+        min-width: 50%;
+    }
+    .footer_privacy_policy {
+        display: flex;
+        justify-content: center;
+    
+    }
+    .mission_border {
+        background: url(./views/background_image/mission_border_img.svg) right 0% top 0%/ 250px no-repeat;    
+        background-size: 250px;
+
+    }
+    .mission_border_text{
+        max-width: 65%;
+    }
+    .tablet_hidden {
+        display: none;
+    }
+    .founders_names {
+        padding-left: 20px;
+        padding-top: 20px;
+        padding-right: 80px;
+    }
+}
+
+@media (min-width: 1440px) {
+    header {
+        padding: 20px 30px;
+        background: url(./views/background_image/header_back_dotted_desktop_1.png) right 15% top 35% / 310px no-repeat, url(./views/background_image/header_back_dotted.svg) top 130% left 10% / 630px no-repeat #1822B7;
+    }
+    .header_top {
+        padding-right: 70px;
+    }
+    .header_bottom {
+        margin: 0 auto;
+        max-width: 95%;
+    }
+    h1 {
+        font-size: 92px;
+        line-height: 101px;
+        margin: 14px 20px 20px 40px;
+    }
+    h2 { 
+        font-size: 48px;
+        line-height: 58px;
+    }
+    p {
+        font-size: 20px;
+        line-height: 32px;
+    }
+    .desktop_hidden {
+        display: none;
+    }
+    .tablet_hidden {
+        display: flex;
+    }
+    .direct_block_dotsgroup_desktop {
+        max-width: 284px;
+        max-height: 224px;
+    }
+    .desktop_logo {
+        width: 180px;
+        height: 35px;
+    }
+    .subtitle {
+        padding-left: 20px;
+    }
+    .list {
+        justify-content:  space-between;       
+    }
+    .list_box_title {
+        min-width: 20%;
+    }
+    .list_box_dot::after {
+        background-color: #E7A652;
+        margin: -20px 0px 0px 175%;
+    }
+    .mission_border {
+        margin: 60px 120px ;
+        background: url(./views/background_image/mission_border_img.svg) right 0% top 0%/ 250px no-repeat;    
+        background-size: 440px;
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+    .mission_border_text {
+        margin: 50px;        
+        max-width: 55%;
+    }
+    .direct_company {
+        padding-left: 120px;
+    }
+    .direct_block {
+        max-width: 32%;
+    }
+    .founders_block {
+        line-height: 32px ;
+    }
+    .founders_names_2 {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 38px;        
+    }
+
 }
